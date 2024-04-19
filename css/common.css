@@ -1,0 +1,27 @@
+/* CSS Code, der für alle Web Pages gleich ist und auf allen Web Pages eingebunden werden muss. */
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  height: 70px;
+  color: #ffffff;
+  background-color: #2487c6;
+}
+.content {
+  flex-grow: 1;
+  background-color: #f7f7f7;
+  padding: 12px;
+  max-width: 800px;
+  margin: auto;
+}

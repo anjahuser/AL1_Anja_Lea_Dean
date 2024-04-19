@@ -1,0 +1,138 @@
+/* CSS Code, den es für die Game Page braucht */
+
+/* Hilfsklasse */
+.hidden {
+  display: none;
+}
+
+/* Spiel-Container mit Beschreibung und Game-Over Text */
+.content-game {
+  min-height: 600px;
+}
+
+#game-container {
+  width: 600px;
+  margin: auto;
+}
+
+#game {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+
+.game-info {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#game-end {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Elemente im Spiel */
+#game-background {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+.bg-animation {
+  animation: moveBg 10.33s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -600px 0;
+  }
+}
+
+#game-dino {
+  height: 75px;
+  width: 75px;
+  top: 225px;
+  position: relative;
+  background-image: url("../images/dino.png");
+  background-size: cover;
+}
+
+.dino-dies {
+  background-color: red;
+}
+
+#game-rock {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("../images/rock.png");
+  background-size: cover;
+}
+
+.rock-animation {
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0% {
+    left: 550px;
+  }
+
+  100% {
+    left: -50px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+    top: 225px;
+  }
+
+  50% {
+    top: 75px;
+  }
+
+  75% {
+    top: 75px;
+  }
+
+  100% {
+    top: 225px;
+  }
+}
+
+#game-start {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0.7;
+  background: black;
+}
+
+.startScreenText {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+#game-score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+}
