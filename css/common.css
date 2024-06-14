@@ -46,6 +46,7 @@ header nav ul li a.active {
   border-bottom-color: #fdcc04;
 }
 
+/* Hamburger Funktion*/
 .hamburger {
   cursor: pointer;
   display: none;
@@ -58,6 +59,7 @@ header nav ul li a.active {
   background: #ffffff;
 }
 
+/* Responsive Design Header*/
 @media only screen and (max-width: 700px) {
   .hamburger {
     display: block;
@@ -133,6 +135,7 @@ header nav ul li a.active {
   line-height: 1.5;
 }
 
+/* Responsive Design Section Yellow + Column left + Column right*/
 @media (min-width: 768px) {
   .container_yellow {
     flex-direction: row;
@@ -200,6 +203,7 @@ header nav ul li a.active {
   font-size: 3;
 }
 
+/* Responsive Design Section White*/
 @media (min-width: 768px) {
   .container_white {
     flex-direction: row;
@@ -296,49 +300,7 @@ header a:active {
   flex-direction: column;
 }
 
-.social-icons {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icon {
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: translateY(-5px);
-}
-
-.app-icon img {
-  display: block;
-  width: 50px;
-  height: 50px;
-}
-
-.icon-elem {
-  list-style: none;
-}
-
-.icon {
-  color: #fdcc04;
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover {
-  transform: translateY(-10px);
-}
-
+/* Menu Links zu anderen Pages */
 .menu {
   display: flex;
   justify-content: center;
@@ -381,33 +343,46 @@ header a:active {
   font-size: 20px;
 }
 
-/*icons*/
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+/* Social Media Icons */
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.fa:hover {
-  opacity: 0.7;
+.social-icon {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.fa-instagram {
-  background: #fdcc04;
-  color: white;
+.social-icon:hover {
+  transform: translateY(-5px);
 }
 
-.fa-pinterest {
-  background: #fdcc04;
-  color: white;
+.app-icon img {
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 
-.fa-tiktok {
-  background: #fdcc04;
-  color: white;
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: #fdcc04;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
 }

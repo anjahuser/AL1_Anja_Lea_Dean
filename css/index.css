@@ -1,5 +1,6 @@
 /* CSS Code, den es für die Start Page braucht */
 
+/* Slider Bilder */
 .slider-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -14,6 +15,8 @@
   display: flex;
   max-width: 1200px;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .wrapper i {
   top: 50%;
@@ -66,21 +69,7 @@
   border-style: solid;
   border-color: #fdcc04;
 }
-.carousel img:first-child {
-  margin-left: 0px;
-}
-@media screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
-}
 
-/* neuheiten */
 .neuheit-slider {
   text-align: center;
 }
@@ -98,13 +87,6 @@
   width: 100%;
   max-width: 800px;
   position: relative;
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .carousel {
@@ -133,4 +115,19 @@
 
 #right {
   right: 10px;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
 }
