@@ -1,1 +1,0 @@
-/* JS Code, der nur auf der über uns Page verwendet wird */
