@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Daten -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- CSS Verlinkungen -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sortiment.css" />
+
+    <!-- JS Verlinkungen -->
+    <script src="./js/sortiment.js" defer></script>
+    <title>NUMBRS Webshop</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation -->
+      <div class="logo">
+        <a href="index.html">NUMBRS</a>
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="sortiment.html" class="active">Sortiment</a>
+          </li>
+          <li>
+            <a href="ueberuns.html">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <!-- Text -->
+    <div class="main">
+    <section class="section_white">
+      <div class="container_white">
+        <div class="column-left">
+          <h1>Coming soon!</h1>
+          <p>
+            Du liebst farbige, ausgefallene und hoch qualitative Kleider? Dann bist du hier genau richtig. Bei uns findest du ein breites Sortiment an verschieden Kleidungsstücken. Geniesse hier eine erste Vorschau von unserem Sortiment. 
+          </p>
+      <br />
+
+      <!-- Filter Funktion -->
+      <div id="btnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          alles anzeigen
+        </button>
+        <button class="btn" onclick="filterSelection('oberteile')">
+          Oberteile
+        </button>
+        <button class="btn" onclick="filterSelection('hosen')">Hosen</button>
+        <button class="btn" onclick="filterSelection('accessoires')">
+          Accessoires
+        </button>
+      </div>
+
+      <!-- Sortiment -->
+      <div class="row">
+        <div class="column accessoires">
+          <div class="content">
+            <img
+              src="images/numbrs kickz.webp"
+              alt="Schuhe"
+              style="width: 100%"
+            />
+            <h4>Schuhe</h4>
+            <p>Diese auffälligen Schuhe aus Plüsch bieten einen einzigartigen Look.</p>
+          </div>
+        </div>
+        <div class="column oberteile">
+          <div class="content">
+            <img
+              src="images/numbrs jacket.webp"
+              alt="Jacke"
+              style="width: 100%"
+            />
+            <h4>Jacke</h4>
+            <p>Diese Bomberjacke aus weichem Stoff ist perfekt für den Herbst oder Fühling. </p>
+          </div>
+        </div>
+        <div class="column hosen">
+          <div class="content">
+            <img
+              src="images/numbrs denim 2.png"
+              alt="Jeans"
+              style="width: 100%"
+            />
+            <h4>Jeans</h4>
+            <p>Diese Jeans bietet einem einen ausgefallenen Look in allen Alltagssituationen.</p>
+          </div>
+        </div>
+
+        <div class="column hosen">
+          <div class="content">
+            <img
+              src="images/numbrs shorts.webp"
+              alt="Shorts"
+              style="width: 100%"
+            />
+            <h4>Shorts</h4>
+            <p>Die Shorts sind perfekt geeignet für warme Frühlings- oder Sommertage.</p>
+          </div>
+        </div>
+        <div class="column accessoires">
+          <div class="content">
+            <img
+              src="images/numbrs glasses.webp"
+              alt="Sonnenbrille"
+              style="width: 100%"
+            />
+            <h4>Sonnenbrille</h4>
+            <p>Mit dieser ausgefallenen Sonnenbrille siehst du aus wie dein Lieblingsmusiker.</p>
+          </div>
+        </div>
+        <div class="column oberteile">
+          <div class="content">
+            <img
+              src="images/numbrs paris.png"
+              alt="T-Shirt"
+              style="width: 100%"
+            />
+            <h4>T-Shirt</h4>
+            <p>Dieses T-Shirt  aus Baumwolle erinnert dich an die tollen Nächte in Paris.</p>
+          </div>
+        </div>
+
+        <div class="column oberteile">
+          <div class="content">
+            <img
+              src="images/numbrs sweater.png"
+              alt="Sweater"
+              style="width: 100%"
+            />
+            <h4>Sweater</h4>
+            <p>Im babyblauen Sweater siehst auch du aus, als hättest du eine Yacht.</p>
+          </div>
+        </div>
+        <div class="column hosen">
+          <div class="content">
+            <img src="images/numbrs Denim 1.webp" alt="Denim" style="width: 100%" />
+            <h4>Denim</h4>
+            <p>Mit dieser Hose stehst auch du mal in den Schlagzeilen der Times.</p>
+          </div>
+        </div>
+        <div class="column accessoires">
+          <div class="content">
+            <img src="images/numbrs cases.webp" alt="Feuerzeughalterung" style="width: 100%" />
+            <h4>Feuerzeughalterung</h4>
+            <p>Mit dieser auffallenden Feuerzeughalterung brennst du sicherlich nicht durch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Page Links -->
+    <ul class="menu">
+      <li class="menu-elem">
+        <a href="index.html" class="menu-icon">HOME</a>
+      </li>
+      <li class="menu-elem">
+        <a href="sortiment.html" class="menu-icon">SORTIMENT</a>
+      </li>
+      <li class="menu-elem">
+        <a href="ueberuns.html" class="menu-icon">ÜBER UNS</a>
+      </li>
+    </ul>
+    <br />
+    <!-- Social Media Icons -->
+    <ul class="social-icons">
+      <li class="social-icon">
+        <a href="https://www.instagram.com/numbrsbydean/" class="app-icon">
+          <img src="./images/instagram.png" alt="Instagram" />
+        </a>
+      </li>
+      <li class="social-icon">
+        <a href="https://ch.pinterest.com/deanischcool/" class="app-icon">
+          <img src="./images/pinterest-logo.png" alt="Pinterest" />
+        </a>
+      </li>
+      <li class="social-icon">
+        <a href="https://www.tiktok.com/@punx_club" class="app-icon">
+          <img src="./images/tick-tack.png" alt="Tik Tok" />
+        </a>
+      </li>
+    </ul>
+    <br />
+    <p class="text_footer">
+      Schulprojekt, M-291 | Anja Huser, Lea Reichmuth & Dean Riillo
+    </p>
+  </footer>
+</body>
+</html>
