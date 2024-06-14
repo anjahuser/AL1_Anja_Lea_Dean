@@ -1,0 +1,413 @@
+/* CSS Code, der für alle Web Pages gleich ist und auf allen Web Pages eingebunden werden muss. */
+/* Common Styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Navigation */
+header {
+  background: #000000;
+  color: #ffffff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+header .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: #fdcc04;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #000000;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+  }
+}
+
+/* Section Yellow */
+.section_yellow {
+  padding: 20px;
+  background-color: #fdcc04;
+}
+
+.container_yellow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-left,
+.column-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-right .image_yellow {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .container_yellow {
+    flex-direction: row;
+  }
+
+  .column-left {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .column-right {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .container_yellow {
+    flex-direction: column;
+  }
+}
+
+/* Section White */
+.section_white {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.container_white {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_white .column-left,
+.container_white .column-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.container_white .column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_white .column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-right .image_white {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.container_white .column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3;
+}
+
+@media (min-width: 768px) {
+  .container_white {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .container_white {
+    flex-direction: column;
+  }
+}
+
+/* buttons */
+.button_1,
+.button_2 {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #ffffff;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 350px; /* Set the desired width */
+  text-align: center;
+}
+
+.button_1:hover {
+  color: #ffffff;
+  background: #fdcc04;
+}
+
+.button_2:hover {
+  color: #fdcc04; /* Change text color to yellow when hovering */
+  background: #ffffff;
+}
+
+.button_2:hover a {
+  color: #fdcc04; /* Ensure the link text color also changes to yellow when hovering */
+}
+
+.button_2 a {
+  color: inherit; /* Inherit the color from the button */
+  text-decoration: none;
+}
+
+/* link color*/
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #fdcc04;
+  background-color: transparent;
+}
+
+header a:active {
+  color: #fdcc04;
+  background-color: transparent;
+}
+header a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+header a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+header a:hover {
+  color: #fdcc04;
+  background-color: transparent;
+}
+
+header a:active {
+  color: #fdcc04;
+  background-color: transparent;
+}
+
+/*footer*/
+.footer {
+  background: #000000;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.app-icon img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: #fdcc04;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text_footer {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.text_footer {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/*icons*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #fdcc04;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #fdcc04;
+  color: white;
+}
+
+.fa-tiktok {
+  background: #fdcc04;
+  color: white;
+}

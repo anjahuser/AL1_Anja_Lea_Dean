@@ -1,0 +1,85 @@
+/* CSS Code, den es für die Stortiment Page braucht */
+
+/* Newsletter Section */
+#newsletter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+#newsletter-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#newsletter-heading {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #fdcc04;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  #newsletter-container {
+    padding: 15px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  #submit-button {
+    padding: 8px;
+  }
+}
+
+/* Fehlerzustand für Formulareingaben */
+input.error {
+  border-color: red;
+}
+
+/*google Maps Karte */
+.responsive_map {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.responsive_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,77 @@
+/* CSS Code, den es für die Stortiment Page braucht */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: #fdcc04;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  background: #000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fdcc04;
+}
+
+.btn.active {
+  background-color: #fdcc04;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+}
